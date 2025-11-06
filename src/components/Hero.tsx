@@ -38,9 +38,7 @@ const Hero = () => {
 
         {/* Descrição */}
         <p className="text-base sm:text-lg md:text-2xl mb-8 sm:mb-10 text-muted-foreground max-w-2xl sm:max-w-3xl mx-auto leading-relaxed px-2 sm:px-0 relative z-10">
-          Em 2 dias de imersão total, você sairá com um plano de Reinvenção do
-          seu negócio, resolvendo os gargalos de Gestão, Marketing, Vendas,
-          Processos, Financeiro, Saúde e Mentalidade que o impedem de crescer.
+          Em 2 dias, revolucione seu negócio e elimine gargalos.
         </p>
 
         {/* Botões */}
