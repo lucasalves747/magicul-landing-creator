@@ -25,7 +25,7 @@ const Hero = () => {
         <img
           src={xLogo}
           alt="X"
-          className="w-42 h-42 md:w-52 md:h-52 lg:w-100 lg:h-100 absolute left-0 opacity-70 z-0"
+          className="w-100 h-100 md:w-100 md:h-100 lg:w-100 lg:h-100 absolute left-0 opacity-70 z-0"
         />
 
         <h1 className="hero-text mb-6 text-glow leading-none flex flex-col items-center">
