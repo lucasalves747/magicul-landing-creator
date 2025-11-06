@@ -22,7 +22,11 @@ const Hero = () => {
           </div>
           <p className="text-sm uppercase tracking-wider">Evento presencial exclusivo em local premium</p>
         </div>
-        <img src={xLogo} alt="X" className="w-42 h-42 md:w-52 md:h-52 lg:w-64 lg:h-64 absolute left-0 opacity-70 z-0" />
+        <img
+          src={xLogo}
+          alt="X"
+          className="w-42 h-42 md:w-52 md:h-52 lg:w-100 lg:h-100 absolute left-0 opacity-70 z-0"
+        />
 
         <h1 className="hero-text mb-6 text-glow leading-none flex flex-col items-center">
           <span className="flex items-center justify-center relative">
