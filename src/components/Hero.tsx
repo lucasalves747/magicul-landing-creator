@@ -4,59 +4,81 @@ import xLogo from "@/assets/x-logo.png";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      {/* Floating circular elements */}
-      <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-card border-2 border-primary/30 flex items-center justify-center animate-pulse">
-        <span className="text-sm font-medium"></span>
-      </div>
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 sm:pt-28 md:pt-32">
+     
 
-      <div className="absolute bottom-1/4 right-1/3 w-48 h-48 rounded-full bg-foreground flex items-center justify-center hover:scale-110 transition-transform duration-500">
-        <span className="text-background text-sm font-bold"></span>
-      </div>
-      <img
-        src={xLogo}
-        alt="X"
-        className="w-100 h-100 p-0 m-0 md:w-100 md:h-100 lg:w-100 lg:h-100 absolute left-0 top-0 lg:left-100 lg:top-10 lg:ml-20 lg:pl-20  md:m-0 md:p-0 opacity-70 z-0"
-      />
-
-      <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="mb-8 flex flex-col items-center justify-center gap-2 text-muted-foreground">
-          <div className="flex items-center gap-4">
-            <Calendar className="w-5 h-5" />
-            <span className="text-sm uppercase tracking-wider">Imersão de 2 dias</span>
+      <div className="container mx-auto px-4 sm:px-6 text-center relative">
+        {/* Info topo */}
+        <div className="mb-6 sm:mb-8 flex flex-col items-center justify-center gap-2 text-muted-foreground relative z-10">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <Calendar className="w-4 h-4 sm:w-5 sm:h-5" />
+            <span className="text-xs sm:text-sm uppercase tracking-wider">
+              Imersão de 2 dias
+            </span>
           </div>
-          <p className="text-sm uppercase tracking-wider">Evento presencial exclusivo em local premium</p>
+          <p className="text-xs sm:text-sm uppercase tracking-wider max-w-xs sm:max-w-none">
+            Evento presencial exclusivo em local premium
+          </p>
         </div>
 
-        <h1 className="hero-text mb-6 text-glow leading-none flex flex-col items-center">
-          <span className="flex items-center justify-center relative">
+        {/* Título principal */}
+        <h1 className="mb-4 sm:mb-6 text-5xl sm:text-6xl md:text-7xl font-black leading-none flex flex-col items-center text-foreground relative">
+          <span className="relative">
+            {/* camada do X que fica na frente do fundo, mas atrás do texto */}
+            <img
+              src={xLogo}
+              alt="X decorativo"
+              className="absolute left-0 top-[-150%] transform -translate-x-[60%] w-[130%] sm:w-[110%] opacity-35 z-0"
+            />
+            {/* texto com z-index mais alto */}
             <span className="relative z-10">BUSINESS</span>
           </span>
-          <span className="text-primary">SUMMIT</span>
+          <span className="text-primary relative z-20">SUMMIT</span>
         </h1>
 
-        <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Em 2 dias de imersão total, você sairá com um plano de Reinvenção do seu negócio, resolvendo os gargalos de
-          Gestão, Marketing, Vendas, Processos, Financeiro, Saúde e Mentalidade que o impedem de crescer.
+        {/* Descrição */}
+        <p className="text-base sm:text-lg md:text-2xl mb-8 sm:mb-10 text-muted-foreground max-w-2xl sm:max-w-3xl mx-auto leading-relaxed px-2 sm:px-0 relative z-10">
+          Em 2 dias de imersão total, você sairá com um plano de Reinvenção do
+          seu negócio, resolvendo os gargalos de Gestão, Marketing, Vendas,
+          Processos, Financeiro, Saúde e Mentalidade que o impedem de crescer.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="hero" size="lg" className="text-lg px-12 py-6">
+        {/* Botões */}
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center relative z-10">
+          <Button
+            variant="hero"
+            size="lg"
+            className="w-full sm:w-auto text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6"
+          >
             Garanta seu acesso
           </Button>
-          <Button variant="circular" size="lg" className="text-lg px-12 py-6">
+          <Button
+            variant="circular"
+            size="lg"
+            className="w-full sm:w-auto text-base sm:text-lg px-8 sm:px-12 py-4 sm:py-6"
+          >
             Saiba mais
           </Button>
         </div>
 
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-4">
-          <span className="px-4 py-2 rounded-full border border-border text-sm">Gestão</span>
-          <span className="px-4 py-2 rounded-full border border-border text-sm">Marketing</span>
-          <span className="px-4 py-2 rounded-full border border-border text-sm">Vendas</span>
-          <span className="px-4 py-2 rounded-full border border-border text-sm">Processos</span>
-          <span className="px-4 py-2 rounded-full border border-border text-sm">Financeiro</span>
-          <span className="px-4 py-2 rounded-full border border-border text-sm">Saúde</span>
-          <span className="px-4 py-2 rounded-full border border-border text-sm">Mentalidade</span>
+        {/* Tags */}
+        <div className="mt-10 sm:mt-14 flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 relative z-10">
+          {[
+            "Gestão",
+            "Marketing",
+            "Vendas",
+            "Processos",
+            "Financeiro",
+            "Saúde",
+            "Mentalidade",
+          ].map((item) => (
+            <span
+              key={item}
+              className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-border text-xs sm:text-sm"
+            >
+              {item}
+            </span>
+          ))}
         </div>
       </div>
     </section>
