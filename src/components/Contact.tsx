@@ -19,20 +19,23 @@ const Contact = () => {
               sobre a imersão e ajudá-lo a garantir sua vaga.
             </p>
 
-            <Button
-              variant="hero"
-              size="lg"
-              className="flex items-center justify-center gap-2 text-base sm:text-lg px-6 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 w-full sm:w-auto"
-              onClick={() =>
-                window.open(
-                  "https://wa.me/5511999999999?text=Olá! Tenho interesse no evento Catalyst",
-                  "_blank"
-                )
-              }
-            >
-              <MessageCircle className="w-5 h-5" />
-              Falar no WhatsApp
-            </Button>
+            {/* Wrapper centralizado */}
+            <div className="flex justify-center">
+              <Button
+                variant="hero"
+                size="lg"
+                className="flex items-center justify-center gap-2 text-base sm:text-lg px-6 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6"
+                onClick={() =>
+                  window.open(
+                    "https://wa.me/5511999999999?text=Olá! Tenho interesse no evento Catalyst",
+                    "_blank"
+                  )
+                }
+              >
+                <MessageCircle className="w-5 h-5" />
+                Falar no WhatsApp
+              </Button>
+            </div>
 
             <p className="text-xs sm:text-sm text-muted-foreground mt-4">
               Respondemos em até 2 horas durante horário comercial
