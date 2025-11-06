@@ -8,7 +8,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-8">
             <h2 className="text-xl font-bold tracking-wider flex items-center gap-2">
-              <img src={xLogo} alt="X" className="w-6 h-6" />
+              <img src={xLogo} alt="X" className="w-8 h-8" />
               <span>BUSINESS</span>
             </h2>
             <div className="hidden md:flex items-center gap-6">

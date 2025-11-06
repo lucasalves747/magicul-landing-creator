@@ -25,7 +25,7 @@ const Hero = () => {
         
         <h1 className="hero-text mb-6 text-glow leading-none flex flex-col items-center">
           <span className="flex items-center gap-4">
-            <img src={xLogo} alt="X" className="w-20 h-20 md:w-32 md:h-32 lg:w-40 lg:h-40 inline-block" />
+            <img src={xLogo} alt="X" className="w-28 h-28 md:w-44 md:h-44 lg:w-56 lg:h-56 inline-block" />
             <span>BUSINESS</span>
           </span>
           <span className="text-primary">SUMMIT</span>
