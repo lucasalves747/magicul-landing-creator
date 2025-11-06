@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-card border-2 border-primary/30 flex items-center justify-center animate-pulse">
         <span className="text-sm font-medium"></span>
       </div>
-      
+
       <div className="absolute bottom-1/4 right-1/3 w-48 h-48 rounded-full bg-foreground flex items-center justify-center hover:scale-110 transition-transform duration-500">
         <span className="text-background text-sm font-bold"></span>
       </div>
@@ -22,21 +22,20 @@ const Hero = () => {
           </div>
           <p className="text-sm uppercase tracking-wider">Evento presencial exclusivo em local premium</p>
         </div>
-        
+
         <h1 className="hero-text mb-6 text-glow leading-none flex flex-col items-center">
           <span className="flex items-center gap-4">
-            <img src={xLogo} alt="X" className="w-28 h-28 md:w-44 md:h-44 lg:w-56 lg:h-56 inline-block" />
+            <img src={xLogo} alt="X" className="w-32 h-32 md:w-44 md:h-44 lg:w-56 lg:h-56 inline-block" />
             <span>BUSINESS</span>
           </span>
           <span className="text-primary">SUMMIT</span>
         </h1>
-        
+
         <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Em 2 dias de imersão total, você sairá com um plano de Reinvenção do seu negócio, 
-          resolvendo os gargalos de Gestão, Marketing, Vendas, Processos, Financeiro, 
-          Saúde e Mentalidade que o impedem de crescer.
+          Em 2 dias de imersão total, você sairá com um plano de Reinvenção do seu negócio, resolvendo os gargalos de
+          Gestão, Marketing, Vendas, Processos, Financeiro, Saúde e Mentalidade que o impedem de crescer.
         </p>
-        
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button variant="hero" size="lg" className="text-lg px-12 py-6">
             Garanta seu acesso
@@ -45,7 +44,7 @@ const Hero = () => {
             Saiba mais
           </Button>
         </div>
-        
+
         <div className="mt-16 flex flex-wrap items-center justify-center gap-4">
           <span className="px-4 py-2 rounded-full border border-border text-sm">Gestão</span>
           <span className="px-4 py-2 rounded-full border border-border text-sm">Marketing</span>
