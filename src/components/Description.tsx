@@ -6,46 +6,27 @@ const Description = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-5xl md:text-6xl font-black mb-6 leading-tight">
-                UM EVENTO QUE VAI
-                <span className="text-primary block">TRANSFORMAR</span>
-                SEU NEGÓCIO
+                A Maioria das Pessoas Ainda Não sabe como
+                <span className="text-primary block">Construir, Posicionar, Crescer e Monetizar,</span>
+                Sua Presença no Digital
               </h2>
             </div>
             
             <div className="space-y-6 text-lg text-muted-foreground">
               <p>
-                Durante este evento exclusivo, você terá acesso às estratégias mais avançadas 
-                e comprovadas do mercado. Não são teorias vazias, mas métodos testados e 
-                validados que geraram milhões em resultados.
+                Em um único dia, você terá acesso direto às estratégias que impulsionaram negócios comuns a se tornarem cases de sucesso mundial. Aprenda como crescer o seu posicionamento com especialistas renomados em comunicação, vendas de alto valor, tráfego pago, inteligência artificial, produção de conteúdo e construção de audiência no YouTube e Instagram
+              </p>
+              <p className="text-foreground font-semibold">
+                Você ainda nem sabe o que não sabe... Chegou a hora de acessar o que está por trás das cortinas dos grandes palcos digitais.
               </p>
               
               <p>
-                Nossos especialistas compartilharão cases reais, frameworks prontos para usar 
-                e insights que só quem está na linha de frente conhece. Você sairá com um 
-                plano de ação claro e executável.
+                Prepare-se para uma experiência exclusiva onde todos os segredos serão revelados. Acesso ilimitado, conhecimento profundo – sua chance única de estar à frente de todos. Não perca essa oportunidade inédita. Participe do X Digital Summit e alcance um novo nível no digital com as estratégias e ferramentas mais eficazes e eficientes que você já viu.
               </p>
               
-              <p className="text-foreground font-semibold">
-                Este não é mais um evento comum. É uma oportunidade única de acelerar 
-                seu crescimento com quem realmente entende do assunto.
-              </p>
               
-              <div className="pt-6 border-t border-border">
-                <div className="flex items-center gap-8">
-                  <div>
-                    <div className="text-4xl font-black text-primary">3+</div>
-                    <div className="text-sm text-muted-foreground">Horas de conteúdo</div>
-                  </div>
-                  <div>
-                    <div className="text-4xl font-black text-primary">500+</div>
-                    <div className="text-sm text-muted-foreground">Participantes</div>
-                  </div>
-                  <div>
-                    <div className="text-4xl font-black text-primary">100%</div>
-                    <div className="text-sm text-muted-foreground">Prático</div>
-                  </div>
-                </div>
-              </div>
+              
+              
             </div>
           </div>
         </div>

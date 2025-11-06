@@ -17,20 +17,22 @@ const Hero = () => {
         <div className="mb-8 flex items-center justify-center gap-4 text-muted-foreground">
           <Calendar className="w-5 h-5" />
           <span className="text-sm uppercase tracking-wider">15 de Dezembro, 2025 • 19:00</span>
+          <p className="text-sm uppercase tracking-wider">PAINEL VIP E ALMOÇO: 10AM - 1:30PM</p>
         </div>
         
+        
         <h1 className="hero-text mb-6 text-glow leading-none">
-          CATALYST
+          X DIGITAL
           <br />
-          <span className="text-primary">PARA SEU</span>
-          <br />
-          NEGÓCIO
+          <span className="text-primary">SUMMIT</span>
+         
+          
         </h1>
         
         <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-2xl mx-auto">
-          Sem compromissos com a mediocridade.
+          Transforme sua presença digital
           <br />
-          Foco total em qualidade e eficiência.
+          em prosperidade financeira
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

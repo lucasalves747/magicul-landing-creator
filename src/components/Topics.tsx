@@ -1,14 +1,12 @@
 import { Check } from "lucide-react";
 
 const topics = [
-  "Estratégias de marketing digital comprovadas",
-  "Construção de funis de vendas de alta conversão",
-  "Automação de processos para escalar seu negócio",
-  "Análise de dados e métricas que importam",
-  "Posicionamento de marca e diferenciação no mercado",
-  "Técnicas avançadas de copywriting",
-  "Growth hacking e crescimento exponencial",
-  "Gestão de equipes e liderança transformadora"
+  "OS SEGREDOS TO YOUTUBE",
+  "VENDAS HIGH TICKET E ALTA PERFORMANCE",
+  "PRODUÇÃO DE CONTEÚDO DE EXCELÊNCIA",
+  "ACELERAÇÃO COM INTELIGÊNCIA ARTIFICIAL",
+  "CRIAÇÃO DE AUTORIDADE E INFLUÊNCIA",
+  "MUITOS OUTROS SEGREDOS, DICAS E TRUQUES"
 ];
 
 const Topics = () => {
@@ -16,16 +14,10 @@ const Topics = () => {
     <section id="topicos" className="py-24 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-black mb-4 text-glow">
-            O QUE VOCÊ VAI
-            <br />
-            <span className="text-primary">APRENDER</span>
-          </h2>
+          
           
           <p className="text-xl text-muted-foreground mb-12">
-            Transformamos seu investimento em um fluxo constante
-            <br />
-            de clientes e desenvolvimento rápido.
+            Um evento presencial exclusivo, desenhado especialmente para brasileiros residentes nos EUA que desejam romper as barreiras digitais e se estabelecer como referências internacionais.
           </p>
           
           <div className="grid gap-4 md:grid-cols-2">
