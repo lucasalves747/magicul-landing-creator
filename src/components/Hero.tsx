@@ -5,7 +5,7 @@ import "./Hero.css";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative  pt-32 sm:pt-40 md:pt-48 pb-16">
+    <section className="min-h-screen flex items-center justify-center relative pt-32 sm:pt-40 md:pt-48 pb-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 text-center relative">
         
         {/* Info topo */}
