@@ -16,7 +16,7 @@ const Hero = () => {
       <img
         src={xLogo}
         alt="X"
-        className="w-100 h-100 md:w-100 md:h-100 lg:w-100 lg:h-100 absolute left-0 top-0 lg:left-100 lg:top-10 lg:ml-20 lg:pl-20  md:m-0 opacity-70 z-0"
+        className="w-100 h-100 md:w-100 md:h-100 lg:w-100 lg:h-100 absolute left-0 top-0 lg:left-100 lg:top-10 lg:ml-20 lg:pl-20  md:m-0 md:p-0 opacity-70 z-0"
       />
 
       <div className="container mx-auto px-6 text-center relative z-10">
