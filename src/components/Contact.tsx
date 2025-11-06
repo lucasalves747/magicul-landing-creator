@@ -15,7 +15,7 @@ const Contact = () => {
             
             <p className="text-xl text-muted-foreground mb-8">
               Nossa equipe está pronta para responder todas as suas perguntas
-              e ajudá-lo a aproveitar ao máximo este evento.
+              sobre a imersão e ajudá-lo a garantir sua vaga.
             </p>
             
             <Button 

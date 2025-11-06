@@ -14,25 +14,24 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="mb-8 flex items-center justify-center gap-4 text-muted-foreground">
-          <Calendar className="w-5 h-5" />
-          <span className="text-sm uppercase tracking-wider">15 de Dezembro, 2025 • 19:00</span>
-          <p className="text-sm uppercase tracking-wider">PAINEL VIP E ALMOÇO: 10AM - 1:30PM</p>
+        <div className="mb-8 flex flex-col items-center justify-center gap-2 text-muted-foreground">
+          <div className="flex items-center gap-4">
+            <Calendar className="w-5 h-5" />
+            <span className="text-sm uppercase tracking-wider">Imersão de 2 dias</span>
+          </div>
+          <p className="text-sm uppercase tracking-wider">Evento presencial exclusivo em local premium</p>
         </div>
         
-        
         <h1 className="hero-text mb-6 text-glow leading-none">
-          X DIGITAL
+          X BUSINESS
           <br />
           <span className="text-primary">SUMMIT</span>
-         
-          
         </h1>
         
-        <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-2xl mx-auto">
-          Transforme sua presença digital
-          <br />
-          em prosperidade financeira
+        <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          Em 2 dias de imersão total, você sairá com um plano de Reinvenção do seu negócio, 
+          resolvendo os gargalos de Gestão, Marketing, Vendas, Processos, Financeiro, 
+          Saúde e Mentalidade que o impedem de crescer.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -45,9 +44,13 @@ const Hero = () => {
         </div>
         
         <div className="mt-16 flex flex-wrap items-center justify-center gap-4">
-          <span className="px-4 py-2 rounded-full border border-border text-sm">estratégia digital</span>
-          <span className="px-4 py-2 rounded-full border border-border text-sm">funil de vendas</span>
-          <span className="px-4 py-2 rounded-full border border-border text-sm">crescimento acelerado</span>
+          <span className="px-4 py-2 rounded-full border border-border text-sm">Gestão</span>
+          <span className="px-4 py-2 rounded-full border border-border text-sm">Marketing</span>
+          <span className="px-4 py-2 rounded-full border border-border text-sm">Vendas</span>
+          <span className="px-4 py-2 rounded-full border border-border text-sm">Processos</span>
+          <span className="px-4 py-2 rounded-full border border-border text-sm">Financeiro</span>
+          <span className="px-4 py-2 rounded-full border border-border text-sm">Saúde</span>
+          <span className="px-4 py-2 rounded-full border border-border text-sm">Mentalidade</span>
         </div>
       </div>
     </section>

@@ -22,7 +22,7 @@ const speakers = [
   },
   {
     name: "Matheus Rigons",
-    bio: "Empresário, pai de duas filhas e estrategista digital, é criador do Método RIGONS®️, framework que prepara empresas para escalar com estrutura, posicionamento e atração de investimentos. Já participou de múltiplos lançamentos de 6 e 7 dígitos ao lado de nomes como Pablo Marçal e Nézio Monteiro. Hoje, é sócio de Hewerton e Santiago na construção de ecossistemas empresariais de alto valor nos EUA. Especialista em Growth com foco em equity e posicionamento digital, conecta empresas em expansão a fundos de investimento. Acredita que estrutura vem antes da escala — e que nenhuma empresa está pronta para crescer até estar pronta para ser investida.",
+    bio: "Empresário, pai de duas filhas e estrategista digital, é criador do Método RIGONS, framework que prepara empresas para escalar com estrutura, posicionamento e atração de investimentos. Já participou de múltiplos lançamentos de 6 e 7 dígitos ao lado de nomes como Pablo Marçal e Nézio Monteiro. Hoje, é sócio de Hewerton e Santiago na construção de ecossistemas empresariais de alto valor nos EUA. Especialista em Growth com foco em equity e posicionamento digital, conecta empresas em expansão a fundos de investimento. Acredita que estrutura vem antes da escala — e que nenhuma empresa está pronta para crescer até estar pronta para ser investida.",
     image: matheus
   },
   {

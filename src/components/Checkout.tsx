@@ -16,11 +16,11 @@ const Checkout = () => {
 
   // Listener opcional — se quiser redirecionar após o envio
   useEffect(() => {
-    const iframe = document.getElementById("inline-Pz0IjWar3pz0aKaquR1K");
+    const iframe = document.getElementById("inline-Pz0IjWar3pz0aKaquR1K") as HTMLIFrameElement;
 
     const checkRedirect = () => {
       try {
-        const url = iframe.contentWindow.location.href;
+        const url = iframe?.contentWindow?.location.href;
         // Troque abaixo pela URL de "obrigado" do seu Salee, se existir:
         if (url.includes("https://seudominio.com/obrigado")) {
           window.location.href = "/obrigado";
@@ -45,7 +45,7 @@ const Checkout = () => {
           </h2>
 
           <p className="text-xl text-muted-foreground mb-12">
-            Vagas limitadas. Não perca essa oportunidade de transformar seu negócio.
+            Vagas limitadas para a imersão de 2 dias. Transforme seu negócio com um plano de reinvenção completo.
           </p>
 
           <Card className="bg-card/50 backdrop-blur border-2 border-primary/30">

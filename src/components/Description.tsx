@@ -3,30 +3,43 @@ const Description = () => {
     <section className="py-24 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-5xl md:text-6xl font-black mb-6 leading-tight">
-                A Maioria das Pessoas Ainda Não sabe como
-                <span className="text-primary block">Construir, Posicionar, Crescer e Monetizar,</span>
-                Sua Presença no Digital
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div className="space-y-6">
+              <h2 className="text-5xl md:text-6xl font-black leading-tight">
+                Seu Negócio Tem Potencial,
+                <span className="text-primary block">Mas Algo Está Travando o Crescimento</span>
               </h2>
+              
+              <div className="bg-card/50 backdrop-blur border border-border rounded-2xl p-6 space-y-4">
+                <p className="text-foreground font-semibold text-lg">
+                  O Problema Real:
+                </p>
+                <p className="text-muted-foreground">
+                  Você tem potencial de crescimento, mas a desorganização interna e o desgaste pessoal te impedem de acelerar. É como ter o motor do seu negócio rodando no vazio, com o freio de mão puxado e o pneu furado.
+                </p>
+                <p className="text-muted-foreground">
+                  Imagine o quanto você já perdeu em faturamento, tempo e qualidade de vida por não ter um plano de reinvenção total.
+                </p>
+              </div>
             </div>
             
-            <div className="space-y-6 text-lg text-muted-foreground">
-              <p>
-                Em um único dia, você terá acesso direto às estratégias que impulsionaram negócios comuns a se tornarem cases de sucesso mundial. Aprenda como crescer o seu posicionamento com especialistas renomados em comunicação, vendas de alto valor, tráfego pago, inteligência artificial, produção de conteúdo e construção de audiência no YouTube e Instagram
+            <div className="space-y-6 text-lg">
+              <div className="bg-primary/10 backdrop-blur border border-primary/30 rounded-2xl p-6">
+                <p className="text-foreground font-semibold text-xl mb-4">
+                  A Solução: X Business Summit
+                </p>
+                <p className="text-muted-foreground">
+                  Em 2 dias de imersão total, você fará a adaptação necessária. O foco é prático: resolveremos seus problemas de Gestão, Marketing, Vendas, Processos, Financeiro, Saúde e Mentalidade in loco.
+                </p>
+              </div>
+              
+              <p className="text-muted-foreground">
+                Diferente de consultorias longas ou eventos que focam em apenas uma área, o X Business Summit oferece uma solução imediata e concentrada, com a entrega de um plano de ação executável que integra todas as áreas do negócio.
               </p>
+              
               <p className="text-foreground font-semibold">
-                Você ainda nem sabe o que não sabe... Chegou a hora de acessar o que está por trás das cortinas dos grandes palcos digitais.
+                Você sai com seu plano de Reinvenção finalizado. É um ambiente de alta concentração para quebrar barreiras e acelerar os resultados.
               </p>
-              
-              <p>
-                Prepare-se para uma experiência exclusiva onde todos os segredos serão revelados. Acesso ilimitado, conhecimento profundo – sua chance única de estar à frente de todos. Não perca essa oportunidade inédita. Participe do X Digital Summit e alcance um novo nível no digital com as estratégias e ferramentas mais eficazes e eficientes que você já viu.
-              </p>
-              
-              
-              
-              
             </div>
           </div>
         </div>
