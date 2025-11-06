@@ -6,11 +6,11 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* Floating circular elements */}
       <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-card border-2 border-primary/30 flex items-center justify-center animate-pulse">
-        <span className="text-sm font-medium">Transformação Empresarial</span>
+        <span className="text-sm font-medium"></span>
       </div>
       
       <div className="absolute bottom-1/4 right-1/3 w-48 h-48 rounded-full bg-foreground flex items-center justify-center hover:scale-110 transition-transform duration-500">
-        <span className="text-background text-sm font-bold">Prioridade Premium</span>
+        <span className="text-background text-sm font-bold"></span>
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
