@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
+import xLogo from "@/assets/x-logo.png";
 
 const Hero = () => {
   return (
@@ -22,9 +23,11 @@ const Hero = () => {
           <p className="text-sm uppercase tracking-wider">Evento presencial exclusivo em local premium</p>
         </div>
         
-        <h1 className="hero-text mb-6 text-glow leading-none">
-          X BUSINESS
-          <br />
+        <h1 className="hero-text mb-6 text-glow leading-none flex flex-col items-center">
+          <span className="flex items-center gap-4">
+            <img src={xLogo} alt="X" className="w-20 h-20 md:w-32 md:h-32 lg:w-40 lg:h-40 inline-block" />
+            <span>BUSINESS</span>
+          </span>
           <span className="text-primary">SUMMIT</span>
         </h1>
         

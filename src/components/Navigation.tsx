@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import xLogo from "@/assets/x-logo.png";
 
 const Navigation = () => {
   return (
@@ -6,7 +7,10 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-8">
-            <h2 className="text-xl font-bold tracking-wider">X BUSINESS</h2>
+            <h2 className="text-xl font-bold tracking-wider flex items-center gap-2">
+              <img src={xLogo} alt="X" className="w-6 h-6" />
+              <span>BUSINESS</span>
+            </h2>
             <div className="hidden md:flex items-center gap-6">
               <a href="#topicos" className="text-sm hover:text-primary transition-colors">
                 TÓPICOS
