@@ -13,6 +13,11 @@ const Hero = () => {
       <div className="absolute bottom-1/4 right-1/3 w-48 h-48 rounded-full bg-foreground flex items-center justify-center hover:scale-110 transition-transform duration-500">
         <span className="text-background text-sm font-bold"></span>
       </div>
+      <img
+        src={xLogo}
+        alt="X"
+        className="w-100 h-100 md:w-100 md:h-100 lg:w-100 lg:h-100 absolute left-0 top-0 opacity-70 z-0"
+      />
 
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="mb-8 flex flex-col items-center justify-center gap-2 text-muted-foreground">
@@ -22,11 +27,6 @@ const Hero = () => {
           </div>
           <p className="text-sm uppercase tracking-wider">Evento presencial exclusivo em local premium</p>
         </div>
-        <img
-          src={xLogo}
-          alt="X"
-          className="w-100 h-100 md:w-100 md:h-100 lg:w-100 lg:h-100 absolute left-0 top-0 opacity-70 z-0"
-        />
 
         <h1 className="hero-text mb-6 text-glow leading-none flex flex-col items-center">
           <span className="flex items-center justify-center relative">
