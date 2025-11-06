@@ -25,7 +25,11 @@ const Hero = () => {
 
         <h1 className="hero-text mb-6 text-glow leading-none flex flex-col items-center">
           <span className="flex items-center justify-center relative">
-            <img src={xLogo} alt="X" className="w-28 h-28 md:w-44 md:h-44 lg:w-56 lg:h-56 absolute left-0 opacity-70 z-0" />
+            <img
+              src={xLogo}
+              alt="X"
+              className="w-42 h-42 md:w-52 md:h-52 lg:w-64 lg:h-64 absolute left-2 opacity-70 z-0"
+            />
             <span className="relative z-10">BUSINESS</span>
           </span>
           <span className="text-primary">SUMMIT</span>
