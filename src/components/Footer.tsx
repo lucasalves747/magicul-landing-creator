@@ -12,11 +12,9 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground">
               © 2025 Catalyst Events. Todos os direitos reservados.
             </p>
-            <p className="text-xs text-muted-foreground">
-              CNPJ: 00.000.000/0001-00
-            </p>
+           
           </div>
-        </div>
+      
       </div>
     </footer>
   );
