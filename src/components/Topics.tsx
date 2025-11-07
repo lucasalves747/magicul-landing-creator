@@ -1,53 +1,101 @@
+import { useEffect, useState, useRef } from "react";
 import { Check } from "lucide-react";
 
 const topics = [
   {
     title: "Diagnóstico 360º",
-    description: "Identificação e solução imediata dos problemas mais críticos em todas as áreas do negócio"
+    description:
+      "Identificação e solução imediata dos problemas mais críticos em todas as áreas do negócio",
   },
   {
     title: "Plano de Ação Estratégico",
-    description: "Criação de um plano de reinvenção executável, com foco em crescimento e expansão digital"
+    description:
+      "Criação de um plano de reinvenção executável, com foco em crescimento e expansão digital",
   },
   {
     title: "Alinhamento de Liderança",
-    description: "Transformação completa do líder, alinhando propósito, saúde e mentalidade com a estratégia de negócios"
+    description:
+      "Transformação completa do líder, alinhando propósito, saúde e mentalidade com a estratégia de negócios",
   },
   {
     title: "Otimização Financeira e de Processos",
-    description: "Estratégias para aumentar a margem de lucro e automatizar o que é manual"
+    description:
+      "Estratégias para aumentar a margem de lucro e automatizar o que é manual",
   },
   {
     title: "Marketing e Vendas de Alto Valor",
-    description: "Construção de autoridade digital e funis de vendas que convertem"
+    description:
+      "Construção de autoridade digital e funis de vendas que convertem",
   },
   {
     title: "Networking Exclusivo",
-    description: "Conexão com outros líderes e empreendedores em um formato de grupo fechado e exclusivo"
-  }
+    description:
+      "Conexão com outros líderes e empreendedores em um formato de grupo fechado e exclusivo",
+  },
 ];
+
+// componente de digitação
+const TypingTitle = () => {
+  const [text, setText] = useState("");
+  const [isVisible, setIsVisible] = useState(false);
+  const fullText = "O QUE VOCÊ VAI CONQUISTAR";
+  const sectionRef = useRef<HTMLHeadingElement | null>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) setIsVisible(true);
+      },
+      { threshold: 0.5 }
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => {
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible) return;
+    let index = 0;
+    const interval = setInterval(() => {
+      setText(fullText.slice(0, index + 1));
+      index++;
+      if (index === fullText.length) clearInterval(interval);
+    }, 80);
+
+    return () => clearInterval(interval);
+  }, [isVisible]);
+
+  return (
+    <h2
+      ref={sectionRef}
+      className="text-3xl sm:text-4xl md:text-5xl font-black mb-6 sm:mb-8 text-center leading-tight"
+    >
+      {text}
+      <span className="text-primary animate-pulse">_</span>
+    </h2>
+  );
+};
 
 const Topics = () => {
   return (
     <section id="topicos" className="py-20 sm:py-24 relative">
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="max-w-5xl mx-auto">
-          {/* Título */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-6 sm:mb-8 text-center leading-tight">
-            O QUE VOCÊ VAI
-            <br />
-            <span className="text-primary">CONQUISTAR</span>
-          </h2>
-          
+        <div className="max-w-5xl mx-auto text-primary">
+          {/* Título com digitação */}
+          <TypingTitle/>
+
           {/* Subtítulo */}
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-10 sm:mb-14 text-center leading-relaxed px-2 sm:px-0">
-            Uma imersão de 2 dias em ambiente exclusivo, com foco total em soluções práticas para o seu negócio
+            Uma imersão de 2 dias em ambiente exclusivo, com foco total em
+            soluções práticas para o seu negócio
           </p>
-          
+
           {/* Cards */}
           <div className="grid gap-5 sm:gap-6 md:gap-8 sm:grid-cols-2">
             {topics.map((topic, index) => (
-              <div 
+              <div
                 key={index}
                 className="flex flex-col gap-3 p-5 sm:p-6 md:p-8 rounded-2xl bg-card/50 backdrop-blur border border-border hover:border-primary/50 transition-all duration-300 group"
               >
