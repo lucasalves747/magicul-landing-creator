@@ -1,43 +1,24 @@
-/* Hero.css */
-
-/* fade suave com leve subida */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.hero-section {
+  position: relative;
+  overflow: hidden;
 }
 
-/* zoom suave */
-@keyframes scaleIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+.hero-section::before {
+  content: "";
+ 
+  inset: 0;
+  background: linear-gradient(135deg, #e01010,  #090909);
+  filter: blur(20px);
+  z-index: 0;
 }
 
-/* aplica as animações */
-.fade-in-up {
-  animation: fadeInUp 0.8s ease forwards;
-  opacity: 0;
-}
-
-/* animações com delay diferentes */
-.delay-100 { animation-delay: 0.1s; }
-.delay-200 { animation-delay: 0.2s; }
-.delay-300 { animation-delay: 0.3s; }
-.delay-400 { animation-delay: 0.4s; }
-.delay-500 { animation-delay: 0.5s; }
-
-/* animação do X */
-.scale-in {
-  animation: scaleIn 1.2s ease-out forwards;
+.hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35%;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.95));
+  z-index: 1;
 }
