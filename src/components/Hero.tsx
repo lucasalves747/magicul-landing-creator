@@ -20,7 +20,7 @@ const Hero = () => {
       {/* Conteúdo */}
       <div className="container mx-auto px-4 sm:px-6 text-center relative z-10">
         <div
-          className="max-w-4xl mx-auto rounded-3xl p-6 sm:p-10 md:p-14 shadow-2xl border border-white/20"
+          className="max-w-4xl mx-auto rounded-3xl p-6 pb-10 sm:p-10 md:p-14 shadow-2xl border border-white/20"
           style={{
             background: "rgba(0, 0, 0, 0.45)",
             backdropFilter: "blur(16px) saturate(180%)",
