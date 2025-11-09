@@ -56,17 +56,17 @@ const Description = () => {
                 <span className="text-primary animate-pulse">_</span>
               </h2>
 
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 sm:p-6 space-y-4">
-                <p className="text-white font-semibold text-lg sm:text-xl">
+              <div className="bg-[#DAA520FF] backdrop-blur-md border border-white/20 rounded-2xl p-5 sm:p-6 space-y-4">
+                <p className="text-black font-semibold text-lg sm:text-xl">
                   O Problema Real:
                 </p>
-                <p className="text-gray-200 text-sm sm:text-base leading-relaxed">
+                <p className="text-black text-sm sm:text-base leading-relaxed">
                   Você tem potencial de crescimento, mas a desorganização
                   interna e o desgaste pessoal te impedem de acelerar. É como
                   ter o motor do seu negócio rodando no vazio, com o freio de
                   mão puxado e o pneu furado.
                 </p>
-                <p className="text-gray-200 text-sm sm:text-base leading-relaxed">
+                <p className="text-black text-sm sm:text-base leading-relaxed">
                   Imagine o quanto você já perdeu em faturamento, tempo e
                   qualidade de vida por não ter um plano de reinvenção total.
                 </p>

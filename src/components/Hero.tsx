@@ -66,7 +66,7 @@ const Hero = () => {
             <Button
               variant="circular"
               size="lg"
-              className="w-full sm:w-auto text-sm sm:text-base px-8 sm:px-12 py-3 sm:py-5 bg-white/10 border border-white/30 text-white hover:bg-white/20"
+              className="w-full sm:w-auto text-sm sm:text-base px-8 sm:px-12 py-3 sm:py-5 bg-white/10 border border-[#DAA520FF] text-white hover:bg-white/20"
             >
               Saiba mais
             </Button>
