@@ -37,7 +37,7 @@ const Description = () => {
 
   return (
     <section
-      className="py-16 sm:py-20 md:py-24 relative"
+      className="pt-0 sm:pt-12 md:pt-20 pb-10 sm:pb-16 md:pb-20 relative"
       style={{
         background:
           "linear-gradient(to bottom, hsl(0, 0%, 5%) 30%, #ff0202dc 60%, hsl(0, 0%, 5%))",
@@ -75,11 +75,11 @@ const Description = () => {
 
             {/* Coluna 2 */}
             <div className="space-y-6 text-white text-base sm:text-lg">
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 sm:p-6">
-                <p className="text-white font-semibold text-lg sm:text-xl mb-3 sm:mb-4">
+              <div className=" bg-[#DAA520FF] border border-white/20 rounded-2xl p-5 sm:p-6">
+                <p className="text-black font-semibold text-lg sm:text-xl mb-3 sm:mb-4">
                   A Solução: X Business Summit
                 </p>
-                <p className="text-gray-200 text-sm sm:text-base leading-relaxed">
+                <p className="text-black  text-sm sm:text-base leading-relaxed">
                   Em 2 dias de imersão total, você fará a adaptação necessária.
                   O foco é prático: resolveremos seus problemas de Gestão,
                   Marketing, Vendas, Processos, Financeiro, Saúde e Mentalidade

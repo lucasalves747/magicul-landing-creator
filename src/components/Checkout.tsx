@@ -37,11 +37,19 @@ const Checkout = () => {
     <section id="checkout" className="py-16 sm:py-20 md:py-24 relative">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 leading-tight">
-            GARANTA SUA
-            <br />
-            <span className="text-primary">VAGA AGORA</span>
-          </h2>
+         <h2
+  className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 leading-tight text-primary"
+  
+>
+  GARANTA SUA
+  <br />
+  <span className="text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">
+    VAGA AGORA
+  </span>
+
+  
+</h2>
+
 
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-10 sm:mb-12 px-2 sm:px-0">
             Vagas limitadas para a imersão de 2 dias. Transforme seu negócio com um plano de reinvenção completo.
@@ -49,7 +57,7 @@ const Checkout = () => {
 
           <Card className="bg-card/50 backdrop-blur border border-primary/30 rounded-3xl overflow-hidden">
             <CardHeader className="px-4 sm:px-8 pt-6 sm:pt-8">
-              <CardTitle className="text-2xl sm:text-3xl font-bold">
+              <CardTitle className="text-2xl sm:text-3xl font-bold drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">
                 Investimento no Seu Crescimento
               </CardTitle>
             </CardHeader>
